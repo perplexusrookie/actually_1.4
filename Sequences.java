@@ -100,13 +100,16 @@ public class Sequences {
         return sum;
     }
 
-    public String powersOfTwo(int count){
-        String all = "";
-        for(int i = 0; i < count; i++){
-            all += (int) Math.pow(2, i)+" ";
+public String powersOfTwo(int count) {
+    String all = "";
+    for (int i = 0; i < count; i++) {
+        all += (int) Math.pow(2, i);
+        if (i < count - 1) {
+            all += " ";
         }
-        return all;
     }
+    return all;
+}
 
     public String countBy(int start, int limit, int step){
         String result = "";
